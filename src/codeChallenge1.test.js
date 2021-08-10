@@ -7,4 +7,6 @@ test('doubles numbers', () => {
     expect(output).toEqual([4, 10, 200]); // assert
 });
 
-// test('')
+test('string it up', () => {
+    const input = 
+});

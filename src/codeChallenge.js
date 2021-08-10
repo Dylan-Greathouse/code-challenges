@@ -3,7 +3,7 @@ export function doubleNumbers(arr) {
 }
 
 export function stringItUp(arr) {
-    return
+    return arr.map((num) => 'num');
 }
 
 export function capitalizeNames(arr) {

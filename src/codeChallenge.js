@@ -3,15 +3,17 @@ export function doubleNumbers(arr) {
 }
 
 export function stringItUp(arr) {
-    return
+    return arr.map((num) => num.toString());
 }
 
 export function capitalizeNames(arr) {
-    return
+    // console.log(arr);
+    return arr.map((name) => name.charAt(0).toUpperCase() + name.slice(1).toLowerCase());
 }
 
 export function namesOnly(arr) {
-    return
+    return arr.map((item) => item.name);
+    
 }
 
 export function makeStrings(arr){

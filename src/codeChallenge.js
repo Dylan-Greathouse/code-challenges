@@ -26,6 +26,6 @@ export function makeStrings(arr){
     });
 }
 
-// export function readyToPutInTheDOM(arr) {
-//     return
-// }
+export function readyToPutInTheDOM(arr) {
+    return arr.map(({name, age}) => `<h1>${name}</h1><h2>${age}</h2>`);
+}

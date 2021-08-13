@@ -1,4 +1,7 @@
-import { capitalizeNames, doubleNumbers, makeStrings, namesOnly, readyToPutInTheDOM, stringItUp } from './codeChallenge.js';
+
+import { capitalizeNames, doubleNumbers, namesOnly, stringItUp, makeStrings, readyToPutInTheDOM } from './codeChallenge.js';
+
+
 
 
 test('doubles numbers', () => {
@@ -84,6 +87,7 @@ test('Make Strings', () => {
         "Bob Ziroll can go to The Matrix"
     ])
 });
+
 
 test('Make Headers', () => {
     const input = [

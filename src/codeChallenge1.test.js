@@ -1,4 +1,7 @@
+
 import { capitalizeNames, doubleNumbers, namesOnly, stringItUp, makeStrings, readyToPutInTheDOM } from './codeChallenge.js';
+
+
 
 
 test('doubles numbers', () => {

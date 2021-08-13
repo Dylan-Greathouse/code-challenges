@@ -18,3 +18,24 @@ export function peopleWhoBelongToTheIlluminati(arr){
 export function ofAge(arr){
   return arr.filter((item) => item.age > 18);
 }
+
+// sort method
+export function leastToGreatest(arr){
+  return arr.sort((a, b) => a-b);
+}
+
+export function greatestToLeast(arr){
+    return arr.sort((a, b) => b-a);
+}
+
+export function lengthSort(arr){
+    return arr.sort((a,b) => a.length - b.length);
+}
+
+export function alphabetical(arr){
+  return arr.sort((a,b) => a.localeCompare(b))
+}
+
+export function byAge(arr){
+  return arr.sort((a,b) => a.age - b.age);
+}

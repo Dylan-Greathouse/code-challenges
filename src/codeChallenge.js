@@ -17,9 +17,15 @@ export function namesOnly(arr) {
 }
 
 export function makeStrings(arr){
-    return
+    return arr.map((item) => {
+        if(item.age < 80){
+            return item.name.toString() +  ' is under age!!';
+        } else {
+            return item.name.toString() + ' can go to The Matrix';
+        }
+    });
 }
 
 export function readyToPutInTheDOM(arr) {
-    return
+    return arr.map(({name, age}) => `<h1>${name}</h1><h2>${age}</h2>`);
 }

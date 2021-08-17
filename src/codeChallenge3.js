@@ -16,9 +16,11 @@ export function getFilteredKey(obj) {
 }
 
 export function getArrayOfKeysAndValues(obj){
-    
+    const key = Object.entries(obj);
+    return key;
 }
 
 export function sortedArraysByValuesLength(obj) {
-
+    const key = Object.entries(obj);
+    return key.reverse((a, b) => a-b);
 }

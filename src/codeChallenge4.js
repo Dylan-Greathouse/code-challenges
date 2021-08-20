@@ -10,8 +10,26 @@ export function updateNumbers(obj) {
 }
 
 export function totalCharacters(arr) {
-    const key = Object.values(arr);
-   let count = Object.values.(arr).length;
-   console.log(count);
-    
+   let charCount = 0;
+   const key = Object.values(arr);
+   key.forEach(arr => {
+       charCount++;
+       charCount += arr.children.length;
+       if (arr.spouse){
+        charCount++;
+       } 
+    });
+    return charCount;
 }
+
+export function hasChildrenEntries(arr, character) {
+    const entry = Object.entries(arr, character);
+    const bool = entry.map((item) => {
+        if(item.spouse === null) {
+            return true;
+        } else if (item.spouse !== null) {
+            return false;
+        }
+    })
+    return bool;
+};

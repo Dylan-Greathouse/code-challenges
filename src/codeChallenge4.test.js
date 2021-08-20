@@ -1,4 +1,4 @@
-import { getHouses, totalCharacters, updateNumbers } from "./codeChallenge4.js";
+import { getHouses, hasChildrenEntries, totalCharacters, updateNumbers } from "./codeChallenge4.js";
 
 test('it gets the names of the houses', () => {
     const characters = [
@@ -103,4 +103,18 @@ test('it gets the names of the houses', () => {
 
       const output = totalCharacters(input);
       expect(output).toEqual(26);
+  })
+
+  test('returns true or false if they have children', () => {
+    const input = 
+      [{
+        name: 'Euron',
+        spouse: null,
+        children: [],
+        house: 'Greyjoy'
+      }];
+     
+
+    const output = hasChildrenEntries(input);
+    expect(output).toEqual([false]);
   })

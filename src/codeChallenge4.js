@@ -24,12 +24,12 @@ export function totalCharacters(arr) {
 
 export function hasChildrenEntries(arr, character) {
     const entry = Object.entries(arr, character);
-    const bool = entry.map((item) => {
+    return entry.map((item) => {
         if(item.spouse === null) {
             return true;
         } else if (item.spouse !== null) {
             return false;
         }
     })
-    return bool;
+    
 };
